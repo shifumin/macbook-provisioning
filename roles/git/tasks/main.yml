@@ -1,0 +1,5 @@
+---
+- name: put a symbolic link for diff-hightlight
+  file: src=/usr/local/share/git-core/contrib/diff-highlight/diff-highlight dest=/usr/local/bin/diff-highlight state=link
+  tags:
+    - git
