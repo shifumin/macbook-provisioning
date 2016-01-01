@@ -1,0 +1,13 @@
+---
+- name: git clone Tmux Plugin Manager repository
+  git:
+    repo=git@github.com:tmux-plugins/tpm
+    dest=~/.tmux/plugins/tpm
+    accept_hostkey=yes
+  tags:
+    - tmux
+
+- name: Reload TMUX environment
+  shell: tmux source ~/.tmux.conf
+  tags:
+    - tmux
