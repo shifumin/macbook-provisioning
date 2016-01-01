@@ -1,0 +1,60 @@
+---
+user: shifumin
+
+homebrew_repositories:
+  - homebrew/php
+
+homebrew_packages:
+  - ansible
+  - ctags
+  - curl
+  - gibo
+  - gist
+  - git
+  - heroku-toolbelt
+  - hg
+  - libevent
+  - lua
+  - mysql
+  - npm
+  - openssl
+  - peco
+  - postgresql
+  - python
+  - rbenv
+  - rbenv-default-gems
+  - readline
+  - reattach-to-user-namespace
+  - rsense
+  - ruby
+  - ruby-build
+  - sqlite
+  - tig
+  - tmux
+  - tree
+  - vim
+  - wget
+  - z
+  - zsh
+
+
+homebrew_cask_packages:
+  - alfred
+  - bettertouchtool
+  - cyberduck
+  - dropbox
+  - evernote
+  - firefox
+  - github-desktop
+  - google-chrome
+  - google-japanese-ime
+  - iterm2
+  - java
+  - kindle
+  - kobito
+  - skype
+  - slack
+  - toggldesktop
+  - vagrant
+  - virtualbox
+  - vlc

@@ -1,0 +1,5 @@
+---
+- name: Create dotfiles symlinks
+  file: src=~/Dropbox/dotfiles dest=~/dotfiles state=link
+  tags:
+    - dotfiles
