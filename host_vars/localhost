@@ -2,7 +2,6 @@
 user: shifumin
 
 homebrew_repositories:
-  - homebrew/php
 
 homebrew_packages:
   - ansible
@@ -51,7 +50,6 @@ homebrew_cask_packages:
   - iterm2
   - java
   - kindle
-  - kobito
   - skype
   - slack
   - toggldesktop
