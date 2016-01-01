@@ -7,5 +7,7 @@
   roles:
     - homebrew
     - homebrew-cask
-    - ruby
+    - git
+    - tmux
     - dotfiles
+    #- ruby
