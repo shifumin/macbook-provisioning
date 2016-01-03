@@ -4,6 +4,7 @@ Ansible playbook for provisioning Macbook.
 
 ## Stack
 
+- defaults
 - Homebrew
 - Homebrew Cask
 - Zsh
