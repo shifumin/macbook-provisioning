@@ -6,6 +6,7 @@ Ansible playbook for provisioning Macbook.
 
 - Homebrew
 - Homebrew Cask
+- Zsh
 - Git
 - tmux
 - dotfiles

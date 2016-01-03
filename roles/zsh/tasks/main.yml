@@ -1,0 +1,5 @@
+---
+- name: change shell to Zsh
+  shell: chsh -s /bin/zsh
+  tags:
+    - zsh
