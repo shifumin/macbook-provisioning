@@ -2,6 +2,17 @@ Macbook provisioning
 =====
 Ansible playbook for provisioning Macbook.
 
+## Stack
+
+- Homebrew
+- Homebrew Cask
+- Git
+- tmux
+- dotfiles
+- Solarized
+- Ruby
+
+
 ## Readying
 
 ```
@@ -14,8 +25,8 @@ $ brew install ansible
 ## Usage
 
 ```
-$ mkdir ~/.macbook-provisioning && cd $_
-$ git clone git@github.com:shifumin/macbook-provisioning.git .
+$ git clone git@github.com:shifumin/macbook-provisioning.git
+$ cd macbook-provisioning
 $ ansible-playbook -i hosts macbook.yml
 ```
 
