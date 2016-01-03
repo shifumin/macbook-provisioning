@@ -10,4 +10,5 @@
     - git
     - tmux
     - dotfiles
-    #- ruby
+    - solarized
+    - ruby
