@@ -7,6 +7,9 @@ homebrew_packages:
   - ansible
   - ctags
   - curl
+  - docker
+  - docker-compose
+  - docker-machine
   - ghq
   - gibo
   - gist
