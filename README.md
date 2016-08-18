@@ -32,3 +32,6 @@ $ cd macbook-provisioning
 $ ansible-playbook -i hosts macbook.yml
 ```
 
+## ToDo
+
+- gem install tmuxinator を追加
