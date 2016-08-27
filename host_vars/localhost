@@ -15,6 +15,7 @@ homebrew_packages:
   - gist
   - git
   - go
+  - graphviz
   - heroku
   - heroku-toolbelt
   - hg
@@ -22,6 +23,7 @@ homebrew_packages:
   - libevent
   - lua
   - mercurial
+  - mosh
   - mysql
   - node
   - openssl
@@ -43,18 +45,21 @@ homebrew_packages:
   - wget
   - z
   - zsh
+  - zsh-completions
 
 homebrew_cask_packages:
   - alfred
+  - amazon-music
   - bettertouchtool
-  - cyberduck
   - dropbox
+  - evernote
   - firefox
   - google-chrome
   - google-japanese-ime
   - gyazo
   - iterm2
   - java
+  - karabiner
   - kindle
   - skype
   - slack
