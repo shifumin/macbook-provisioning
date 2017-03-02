@@ -1,0 +1,18 @@
+homebrew_cask_packages:
+  - { name: alfred }
+  - { name: cmd-eikana }
+  - { name: dash }
+  - { name: dropbox }
+  - { name: google-chrome }
+  - { name: google-japanese-ime }
+  - { name: gyazo }
+  - { name: iterm2 }
+  - { name: java }
+  - { name: karabiner-elements }
+  - { name: kindle }
+  - { name: skype }
+  - { name: slack }
+  - { name: toggldesktop }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: vlc }

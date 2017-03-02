@@ -1,24 +1,22 @@
 homebrew_taps:
-  - homebrew/cask
+  - caskroom/cask
 
 homebrew_repositories:
 
 homebrew_packages:
  - { name: ansible }
- - { name: ccat }
  - { name: ctags }
  - { name: curl }
- - { name: docker }
- - { name: docker-compose }
- - { name: docker-machine }
+#  - { name: docker }
+#  - { name: docker-compose }
+#  - { name: docker-machine }
  - { name: ghq }
  - { name: gibo }
  - { name: gist }
  - { name: git }
  - { name: go }
- - { name: graphviz }
- - { name: heroku }
- - { name: heroku-toolbelt }
+#  - { name: heroku }
+#  - { name: heroku-toolbelt }
  - { name: hg }
  - { name: hub }
  - { name: libevent }
@@ -30,41 +28,17 @@ homebrew_packages:
  - { name: peco }
  - { name: postgresql }
  - { name: python }
+ - { name: python3 }
  - { name: rbenv }
  - { name: rbenv-default-gems }
  - { name: readline }
  - { name: reattach-to-user-namespace }
- - { name: ripgrep }
- - { name: rsense }
  - { name: ruby }
  - { name: ruby-build }
- - { name: sqlite }
  - { name: tig }
  - { name: tmux }
  - { name: tree }
  - { name: vim }
  - { name: wget }
- - { name: z }
  - { name: zsh }
  - { name: zsh-completions }
-
-homebrew_cask_packages:
-# - alfred
-# - amazon-music
-# - bettertouchtool
-# - dropbox
-# - evernote
-# - firefox
-# - google-chrome
-# - google-japanese-ime
-# - gyazo
-# - iterm2
-# - java
-# - karabiner
-# - kindle
-# - skype
-# - slack
-# - toggldesktop
-# - vagrant
-# - virtualbox
-# - vlc
