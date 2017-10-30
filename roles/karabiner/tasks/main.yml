@@ -1,0 +1,15 @@
+---
+- name: create .config directory
+  file:
+    path: $HOME/.config
+    state: directory
+
+- name: put a symbolic link for Karabiner-Elements configuration file
+  file:
+    src: $HOME/Dropbox/tool/karabiner
+    dest: $HOME/.config/karabiner
+    state: link
+    force: true
+
+- name: restart karabiner_console_user_server process
+  shell: launchctl kickstart -k gui/`id -u`/org.pqrs.karabiner.karabiner_console_user_server
