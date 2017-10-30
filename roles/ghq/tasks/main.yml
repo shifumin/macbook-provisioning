@@ -1,0 +1,8 @@
+---
+- name: ghq get repositories
+  command: ghq get -p "{{ item }}"
+  with_items:
+    - shifumin/dotfiles
+    - shifumin/setupfiles
+    - shifumin/macbook-provisioning
+    - seebi/dircolors-solarized
