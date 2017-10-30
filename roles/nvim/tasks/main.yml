@@ -1,0 +1,7 @@
+---
+- name: pip3 install neovim
+  pip:
+    name: "{{ item }}"
+    executable: pip3
+  with_items:
+    - neovim
