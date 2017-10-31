@@ -2,15 +2,25 @@ Macbook provisioning
 =====
 Ansible playbook for provisioning Macbook.
 
+## Operation Environment
+
+- macOS High Sierra 10.13
+- Python 2.7.14
+- Ansible 2.4.1.0
+
 ## Stack
 
-- defaults
+- osx_defaults
 - Homebrew
 - Homebrew Cask
-- Zsh
 - Git
+- Zsh
 - tmux
 - dotfiles
+- ghq
+- git
+- Karabiner-Elements
+- Neovim
 - Solarized
 - Ruby
 
@@ -18,20 +28,13 @@ Ansible playbook for provisioning Macbook.
 ## Readying
 
 ```
-$ sudo xcodebuild -license
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew install git
-$ brew install ansible
+$ git clone https://github.com/shifumin/macbook-provisioning
+$ cd macbook-provisioning
+$ ./setup_ansible.sh
 ```
 
 ## Usage
 
 ```
-$ git clone git@github.com:shifumin/macbook-provisioning.git
-$ cd macbook-provisioning
-$ ansible-playbook -i hosts macbook.yml
+$ ansible-playbook -i hosts localhost.yml --ask-become-pass
 ```
-
-## ToDo
-
-- gem install tmuxinator を追加
