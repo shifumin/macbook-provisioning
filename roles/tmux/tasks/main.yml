@@ -1,13 +1,21 @@
 ---
-- name: git clone Tmux Plugin Manager repository
+- name: git clone Tmux Plugin Manager
   git:
-    repo=git@github.com:tmux-plugins/tpm
-    dest=~/.tmux/plugins/tpm
-    accept_hostkey=yes
-  tags:
-    - tmux
+    repo: git@github.com:tmux-plugins/tpm
+    dest: $HOME/.tmux/plugins/tpm
 
 - name: Reload TMUX environment
   shell: tmux source ~/.tmux.conf
-  tags:
-    - tmux
+
+- name: install Tmuxinator
+  gem:
+    name: tmuxinator
+    state: latest
+
+- name: create .bin directory
+  file:
+    path: $HOME/.bin
+    state: directory
+
+- name: download tmuxinator.zsh
+  shell: curl -fsSL https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o $HOME/.bin/tmuxinator.zsh
