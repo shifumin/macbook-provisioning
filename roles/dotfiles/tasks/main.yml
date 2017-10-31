@@ -1,5 +1,52 @@
 ---
-- name: Create dotfiles symlinks
-  file: src=~/Dropbox/dotfiles dest=~/dotfiles state=link
-  tags:
-    - dotfiles
+- name: create symlink for dotfiles directory
+  file:
+    src: $HOME/.ghq/github.com/shifumin/dotfiles
+    dest: $HOME/dotfiles
+    state: link
+    force: true
+
+- name: create symlink for dotfiles
+  file:
+    src: "$HOME/dotfiles/{{ item }}"
+    dest: "$HOME/{{ item }}"
+    state: link
+    force: true
+  with_items:
+    - ansible.cfg
+    - .ctags
+    - .gemrc
+    - .gitconfig
+    - .gitignore
+    - .gitmessage.txt
+    - .pryrc
+    - .rubocop.yml
+    - .tigrc
+    - .tmux.conf
+    - .tmuxinator
+    - .vimrc
+    - .vimrc.neobundle
+    - .zshenv
+    - .zshrc
+    - .zprofile
+
+- name: create symlink for battery binary
+  file:
+    src: "$HOME/dotfiles/{{ item }}"
+    dest: "/usr/local/bin/{{ item }}"
+    state: link
+    force: true
+  with_items:
+    - battery
+
+- name: create .config directory
+  file:
+    path: $HOME/.config
+    state: directory
+
+- name: create symlink for Neovim setting files
+  file:
+    src: $HOME/dotfiles/nvim
+    dest: $HOME/.config/nvim
+    state: link
+    force: true
