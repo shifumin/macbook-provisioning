@@ -1,6 +1,0 @@
----
-- name: disable HotPlug for ImageCapture
-  shell: defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
-  tags:
-    - defaults
-
