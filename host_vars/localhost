@@ -1,70 +1,158 @@
 homebrew_taps:
-  - homebrew/cask
-
-homebrew_repositories:
+  - caskroom/cask
 
 homebrew_packages:
  - { name: ansible }
+ - { name: awscli }
  - { name: ccat }
+ - { name: coreutils }
  - { name: ctags }
  - { name: curl }
- - { name: docker }
- - { name: docker-compose }
- - { name: docker-machine }
+ - { name: direnv }
  - { name: ghq }
  - { name: gibo }
- - { name: gist }
  - { name: git }
  - { name: go }
- - { name: graphviz }
  - { name: heroku }
- - { name: heroku-toolbelt }
  - { name: hg }
  - { name: hub }
  - { name: libevent }
  - { name: lua }
+ - { name: mas }
  - { name: mercurial }
  - { name: mysql }
+ - { name: neovim }
  - { name: node }
  - { name: openssl }
  - { name: peco }
  - { name: postgresql }
  - { name: python }
- - { name: rbenv }
- - { name: rbenv-default-gems }
+ - { name: python3 }
  - { name: readline }
  - { name: reattach-to-user-namespace }
  - { name: ripgrep }
- - { name: rsense }
  - { name: ruby }
- - { name: ruby-build }
- - { name: sqlite }
+ - { name: terraform }
  - { name: tig }
  - { name: tmux }
  - { name: tree }
  - { name: vim }
  - { name: wget }
- - { name: z }
  - { name: zsh }
  - { name: zsh-completions }
 
 homebrew_cask_packages:
-# - alfred
-# - amazon-music
-# - bettertouchtool
-# - dropbox
-# - evernote
-# - firefox
-# - google-chrome
-# - google-japanese-ime
-# - gyazo
-# - iterm2
-# - java
-# - karabiner
-# - kindle
-# - skype
-# - slack
-# - toggldesktop
-# - vagrant
-# - virtualbox
-# - vlc
+ - { name: alfred }
+ - { name: chatwork }
+ - { name: dash }
+ - { name: dropbox }
+ - { name: google-chrome }
+ - { name: gyazo }
+ - { name: inkdrop }
+ - { name: iterm2 }
+ - { name: karabiner-elements }
+ - { name: kindle }
+ - { name: marp }
+ - { name: mattermost }
+ - { name: skype }
+ - { name: slack }
+ - { name: spotify }
+ - { name: toggldesktop }
+ - { name: vagrant }
+ - { name: virtualbox }
+ - { name: vlc }
+
+mas_applications:
+  - { name: 'LINE', store_hash: 539883307 }
+  - { name: 'Twitter', store_hash: 409789998 }
+
+osx_defaults:
+  - name: disableHotPlug
+    domain: com.apple.ImageCapture
+    key: disableHotPlug
+    type: bool
+    value: true
+
+  - name: Clicking
+    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    key: Clicking
+    type: int
+    value: 1
+
+  - name: Clicking
+    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    key: Clicking
+    type: int
+    value: 1
+
+  - name: enable Safari's debug menu
+    domain: com.apple.Safari
+    key: IncludeInternalDebugMenu
+    type: bool
+    value: true
+
+  - name: show hidden files on Finder
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+
+  - name: show extension on Finder
+    domain: com.apple.finder
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+
+  - name: show path bar on Finder
+    domain: com.apple.finder
+    key: ShowPathbar
+    type: bool
+    value: true
+
+  - name: show status bar on Finder
+    domain: com.apple.finder
+    key: ShowStatusBar
+    type: bool
+    value: true
+
+  - name: automatilaclly hide dock
+    domain: com.apple.dock
+    key: autohide
+    type: int
+    value: 1
+
+  - name: show dock on left
+    domain: com.apple.dock
+    key: orientation
+    type: string
+    value: 'left'
+
+  - name: tilesize
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 128
+
+  - name: InitialKeyRepeat
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: int
+    value: 13
+
+  - name: KeyRepeat
+    domain: NSGlobalDomain
+    key: KeyRepeat
+    type: int
+    value: 3
+
+  - name: trackpad.scaling
+    domain: NSGlobalDomain
+    key: com.apple.trackpad.scaling
+    type: float
+    value: 2.5
+
+  - name: AppleShowAllExtensions
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
