@@ -1,5 +1,10 @@
 ---
+- name: add Zsh
+  lineinfile:
+    dest: /etc/shells
+    line: /usr/local/bin/zsh
+  become: yes
+
 - name: change shell to Zsh
-  shell: chsh -s /bin/zsh
-  tags:
-    - zsh
+  shell: chsh -s /usr/local/bin/zsh
+  become: yes
