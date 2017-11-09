@@ -1,13 +1,7 @@
 ---
-- name: display ~/Library directory
-  shell: chflags nohidden ~/Library
-  tags:
-    - solarized
-
-- name: git clone solarized repository
-  git:
-    repo=git@github.com:altercation/solarized
-    dest=~/LIbrary/solarized
-    accept_hostkey=yes
-  tags:
-    - solarized
+- name: create symlink for dircolors-solarized
+  file:
+    src: $HOME/.ghq/github.com/seebi/dircolors-solarized/dircolors.ansi-universal
+    dest: $HOME/.dircolors
+    state: link
+    force: true
