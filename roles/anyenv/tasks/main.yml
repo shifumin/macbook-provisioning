@@ -1,0 +1,46 @@
+---
+- name: git clone anyenv
+  git:
+    repo: git@github.com:riywo/anyenv
+    dest: $HOME/.anyenv
+
+- name: create .anyenv/plugins directory
+  file:
+    path: $HOME/.anyenv/plugins
+    state: directory
+
+- name: git clone anyenv-update
+  git:
+    repo: git@github.com:znz/anyenv-update
+    dest: $HOME/.anyenv/plugins/anyenv-update
+
+- name: git clone anyenv-git
+  git:
+    repo: git@github.com:znz/anyenv-git
+    dest: $HOME/.anyenv/plugins/anyenv-git
+
+- name: exec $SHELL -l
+  shell: exec $SHELL -l
+
+- name: install rbenv
+  shell: anyenv install rbenv
+  failed_when: false
+
+- name: git clone rbenv-default-gems
+  git:
+    repo: git@github.com:rbenv/rbenv-default-gems
+    dest: $HOME/.anyenv/envs/rbenv/plugins/rbenv-default-gems
+
+- name: create symlink for default-gems
+  file:
+    src: $HOME/dotfiles/default-gems
+    dest: $HOME/.anyenv/envs/rbenv/default-gems
+    state: link
+    force: true
+
+- name: install pyenv
+  shell: anyenv install pyenv
+  failed_when: false
+
+- name: exec $SHELL -l
+  shell: exec $SHELL -l
