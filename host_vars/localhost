@@ -20,7 +20,6 @@ homebrew_packages:
  - { name: jq }
  - { name: libevent }
  - { name: lua }
- - { name: mas }
  - { name: mercurial }
  - { name: mysql }
  - { name: neovim }
@@ -64,10 +63,6 @@ homebrew_cask_packages:
  - { name: vagrant }
  - { name: virtualbox }
  - { name: vlc }
-
-mas_applications:
-  - { name: 'LINE', store_hash: 539883307 }
-  - { name: 'Twitter', store_hash: 409789998 }
 
 osx_defaults:
   - name: disableHotPlug
