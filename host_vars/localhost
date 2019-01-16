@@ -39,7 +39,6 @@ homebrew_packages:
 homebrew_cask_packages:
  - { name: 1password }
  - { name: alfred }
- - { name: chatwork }
  - { name: chromedriver }
  - { name: dash }
  - { name: dropbox }
@@ -50,11 +49,9 @@ homebrew_cask_packages:
  - { name: karabiner-elements }
  - { name: kindle }
  - { name: marp }
- - { name: skype }
+ - { name: ngrok }
  - { name: slack }
  - { name: spotify }
- - { name: vagrant }
- - { name: virtualbox }
  - { name: vlc }
 
 osx_defaults:
