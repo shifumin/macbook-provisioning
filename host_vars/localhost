@@ -10,7 +10,9 @@ homebrew_packages:
  - { name: gibo }
  - { name: git }
  - { name: go }
+ - { name: graphviz }
  - { name: heroku }
+ - { name: httpie }
  - { name: hg }
  - { name: hub }
  - { name: libevent }
@@ -20,6 +22,8 @@ homebrew_packages:
  - { name: neovim }
  - { name: node }
  - { name: openssl }
+ - { name: pastel }
+ - { name: plantuml }
  - { name: postgresql }
  - { name: python }
  - { name: python@2 }
@@ -39,6 +43,7 @@ homebrew_packages:
 homebrew_cask_packages:
  - { name: 1password }
  - { name: alfred }
+ - { name: bettertouchtool }
  - { name: chromedriver }
  - { name: dash }
  - { name: dropbox }
@@ -52,6 +57,7 @@ homebrew_cask_packages:
  - { name: ngrok }
  - { name: slack }
  - { name: spotify }
+ - { name: visual-studio-code }
  - { name: vlc }
 
 osx_defaults:
