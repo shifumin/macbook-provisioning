@@ -46,6 +46,7 @@ homebrew_cask_packages:
  - { name: bettertouchtool }
  - { name: chromedriver }
  - { name: dash }
+ - { name: docker }
  - { name: dropbox }
  - { name: google-chrome }
  - { name: gyazo }
@@ -55,6 +56,7 @@ homebrew_cask_packages:
  - { name: kindle }
  - { name: marp }
  - { name: ngrok }
+ - { name: sequel-pro }
  - { name: slack }
  - { name: spotify }
  - { name: visual-studio-code }
